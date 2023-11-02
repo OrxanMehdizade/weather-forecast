@@ -1,32 +1,50 @@
 .forecastDiv {
+    position: relative;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 530px;
+    background: #f3f3f3;
 }
 
 #search {
-    background: aqua;
-    & h2{
-        height: 50px;
-        width: 50px;
-        float: left;
 
-    }
-    & #searchId,#btn{
-        height: 50px;
-        width: 50px;
-        float: right;
-    }
-
+    color: aqua;
+    background: #f3f3f3;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-#todaysForecast {
-    background: red;
+#searchId {
+    border-top:0 ;
+    border-left:0 ;
+    border-right:0 ;
+    color: aqua;
+    border-bottom: 2px solid aqua ;
+    margin-right: 10px;
+    float: right;
+    text-decoration: underline;
+}
 
+#btn {
+    float: right;
+}
+
+#todayForecast {
+    padding-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 220px;
 }
 
 #weeklyForecast {
-    background: rebeccapurple;
+    padding-top: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 220px;
 }

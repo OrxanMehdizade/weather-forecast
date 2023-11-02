@@ -7,21 +7,23 @@
 </head>
 
 <body>
-<div class="forecastDiv">
-    <div id="search">
-        <h2>CURRENT WEATHER</h2>
-        <input type="search" id="searchId">
-        <button id="btn">txt</button>
-
-
-    </div>
-
-    <div id="todaysForecast">
-
-    </div>
-
-    <div id="weeklyForecast">
-    </div>
+<div id="search">
+    CURRENT WEATHER
+    <button id="btn"></button>
+    <input type="search" id="searchId" placeholder="Search">
 </div>
+
+<div id="todayForecast">
+    <p id="temperature"></p>
+    <p id="description"></p>
+    <img id="weatherImage" alt="Weather Icon">
+</div>
+
+<div id="weeklyForecast">
+    <h2>5-Day Weather Forecast</h2>
+    <ul id="weeklyForecastList"></ul>
+</div>
+
+<script src="jS/forecast.js"></script>
 </body>
 </html>
