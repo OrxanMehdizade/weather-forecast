@@ -1,3 +1,6 @@
+body{
+    background-color: #f3f3f3;
+}
 .forecastDiv {
     position: relative;
     margin: 0 auto;
@@ -10,26 +13,34 @@
 }
 
 #search {
-
-    color: aqua;
+    color: darkcyan;
     background: #f3f3f3;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
 #searchId {
-    border-top:0 ;
-    border-left:0 ;
-    border-right:0 ;
-    color: aqua;
-    border-bottom: 2px solid aqua ;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: darkcyan;
+    border-bottom: 2px solid aqua;
     margin-right: 10px;
     float: right;
     text-decoration: underline;
 }
 
 #btn {
+    background-image:url("../İmages/analysis.png");
+    background-size: cover;
+
     float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: -7px;
+    border: none;
+
 }
 
 #todayForecast {
@@ -40,11 +51,128 @@
     height: 220px;
 }
 
-#weeklyForecast {
-    padding-top: 15px;
 
+#cityId {
+    color: darkcyan;
+    font-size: 18px;
+    margin-left: 20px;
+    float: left;
+}
+
+#DateId {
+    color: darkcyan;
+    font-size: 18px;
+    margin-right: 20px;
+    padding: 5px;
+    float: right;
+}
+
+
+#weatherModeImgId {
+    padding-left: 20px;
+    margin-top: 75px;
+    width: 100px;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    float: left;
+    display: none;
+}
+
+#tempId{
+
+    text-align: center;
+    color: darkcyan;
+    margin-left: 20px;
+    margin-top: 120px;
+    width: 100px;
+    height: 50px;
+    float: left;
+}
+
+
+#weatherModeId {
+    color: darkcyan;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 45px;
+    margin-left: -46px;
+    float: left;
+}
+
+#divMMWİd{
+
+    width: 200px;
+    height: 150px;
+    margin-right: 25px;
+    float: right;
+    & #minTemperature, #maxTemperature, #windSpeed {
+        color: darkcyan;
+        font-size: 15px;
+        padding: 5px;
+
+
+    }
+
+}
+
+.hourly-forecast {
+    color: darkcyan;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 0;
+    display: inline-block;
+    height: 200px;
+    width: 100px;
+    & #monİd{
+        margin-top: 38px;
+    }
+    & #pTag{
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    & p{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+}
+
+.weeklyForecast {
+    color: darkcyan;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding-top: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     height: 220px;
+    & #forecastDataId{
+        float: left;
+        & h4{
+            margin-left: 15px;
+            margin-top: 3px;
+            color: darkcyan;
+        }
+        & strong{
+            font-size: 15px;
+            margin-left: 15px;
+        }
+        & #pForecast{
+            margin-top: 80px;
+            margin-bottom: 0;
+        }
+
+        & p{
+            font-size: 12px;
+            margin-left: 15px;
+
+        }
+
+    }
 }
+
+
+
+
+
+
