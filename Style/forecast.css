@@ -1,6 +1,11 @@
 body{
     background-color: #f3f3f3;
 }
+
+.frameDiv{
+    width: 800px;
+    margin: 0 auto;
+}
 .forecastDiv {
     position: relative;
     margin: 0 auto;
